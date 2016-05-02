@@ -9,10 +9,3 @@ $(document).ready(function(){
   });
 });
 
-setTimeout(function() { 
-    $.get("/callme/tpl/modal.php", function(data) {
-    $(".callme").html(data);
-    $('.modal-popup, .modal-overlay').css({'opacity': 1, 'visibility': 'visible'});
-  });
-
-  }, 5000);
