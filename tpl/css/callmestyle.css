@@ -1,0 +1,224 @@
+.callme_wrapper {
+    -webkit-border-radius: 100%!important;
+    -moz-border-radius: 100%!important;
+    border-radius: 100%!important;
+    -webkit-transition: all .5s!important;
+    -moz-transition: all .5s!important;
+    -o-transition: all .5s!important;
+    transition: all .5s!important;
+    transform-origin: 50% 50% 0;
+    z-index: 100000001;
+    text-align: center;
+    background-color: #00aff2;
+	width: 80px;
+    height: 80px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+span.glyphicon.glyphicon-earphone {
+    top: 8px;
+}
+.callmeicon:hover {
+	cursor: pointer;
+	z-index: 9999;
+}
+.callme_wrapper:hover {
+    background-color: #09CC18;
+	transform: rotate(360deg)!important;
+}
+.callme_phone {
+    font-size: 48px!important;
+    line-height: 83px!important;
+    color: #fff!important;
+}
+form#modalform {
+    position: fixed;
+    top: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+input#modalform {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 24px;
+	font-family: calibri;
+    font-weight: 100;
+}
+input#modalformbtn {
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    height: 80px;
+    background-color: #05A3E2;
+    font-size: 24px;
+    color: white;
+	font-family: calibri;
+    font-weight: 100;
+	text-transform: uppercase;
+}
+input#modalformbtn:hover{
+	background-color: #0A83B3;
+}
+.formtitle {
+	padding-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: calibri;
+}
+.formbottom {
+	padding-top: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-family: calibri;
+    font-size: 20px;
+}
+.overlay {
+    background-color: rgba(68, 68, 68, 0.7);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 99999;
+		-webkit-transition: opacity .5s;
+		-moz-transition: opacity .5s;
+		-ms-transition: opacity .5s;
+		-o-transition: opacity .5s;
+		transition: opacity .5s;
+}
+.popup {
+	background-color: #fff;
+	right:0;
+	opacity: 0;
+	width: 400px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	text-align: justify;
+	visibility: hidden;
+	z-index: 999999;
+	-webkit-transition: opacity .5s, top .5s;
+	-moz-transition: opacity .5s, top .5s;
+	-ms-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
+
+}
+
+.popup .close_window {
+    padding: 1px 9px 4px 9px;
+    cursor: pointer;
+    color: #A7A5A5;
+    font-family: calibri;
+}
+
+.popup .close_window:hover {
+    color: black;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    right: 150px;
+    color: #B5B4B4;
+}
+.copyright:hover {
+	text-decoration: underline;
+}
+
+
+
+.modal-overlay {
+    background-color: rgba(68, 68, 68, 0.7);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 99999;
+		-webkit-transition: opacity .5s;
+		-moz-transition: opacity .5s;
+		-ms-transition: opacity .5s;
+		-o-transition: opacity .5s;
+		transition: opacity .5s;
+}
+.modal-popup {
+	background-color: #fff;
+	opacity: 0;
+	position: fixed;
+	visibility: hidden;
+	z-index: 999999;
+	-webkit-transition: opacity .5s, top .5s;
+	-moz-transition: opacity .5s, top .5s;
+	-ms-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
+
+}
+
+.modal-popup .close_window {
+    padding: 1px 9px 4px 9px;
+    cursor: pointer;
+    color: #A7A5A5;
+    font-family: calibri;
+}
+
+.modal-popup .close_window:hover {
+    color: black;
+}
+form#modalform1 {
+    padding: 50px;
+}
+h1#result{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: calibri;
+}
+p#result {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-family: calibri;
+    font-size: 20px;
+}
+.results {
+    position: fixed;
+    top: 40%;
+    padding: 20px 20px 20px 20px;
+    width: inherit;
+}
+.resultsbtn {
+    border: none;
+    margin-top: 15px;
+    background-color: #05A3E2;
+    font-size: 24px;
+    color: white;
+    font-family: calibri;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 100;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.resultsbtn:hover{
+	background-color: #0A83B3;
+}
+
+
+
+@media screen and (max-device-width: 380px) {
+.popup {
+	width: 100vw;
+}
+}
