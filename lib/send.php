@@ -11,7 +11,8 @@ $body=file_get_contents("http://sms.ru/sms/send?api_id=".urlencode(iconv("window
 
 // Выводим сообщение пользователю 
 print "<script language='Javascript'>
-$('.formheader').css({'visibility': 'hidden'});
+$('#modalform').css({'visibility': 'hidden'});
+
 </script>";
 echo "<h1 id='result'>";
 print "Спасибо за заявку!";

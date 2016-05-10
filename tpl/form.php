@@ -36,7 +36,7 @@ require '../lib/config.php';
 </form>
  <div class="results">
  </div>
-<div class="copyright">© <a href="http://gatapov.com/2015/12/02/скрипт-обратного-звонка-с-смс-уведомл/" target="blank" style="color: #B5B4B4; text-decoration: none;">Callme script</a></div>
+<div class="copyright">© <a href="http://callme.gatapov.com/" target="blank" style="color: #B5B4B4; text-decoration: none;">Callme script</a></div>
 </div>
 
 <script type="text/javascript">
@@ -51,7 +51,7 @@ e.preventDefault();
 });
 /*
 var timerId = setInterval(function() {
-  $(".callme_wrapper").css("transform", "rotate(360deg)");
+  $('.callme_wrapper2').css('transform', 'rotate(360deg)');
 
 }, 2000);
 */
