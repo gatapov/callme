@@ -36,7 +36,9 @@ require '../lib/config.php';
 </form>
  <div class="results">
  </div>
-<div class="copyright">© <a href="http://callme.gatapov.com/" target="blank" style="color: #B5B4B4; text-decoration: none;">Callme script</a></div>
+ <div class="callme_copyright-wrapper">
+<div class="callme_copyright">© <a href="http://callme.gatapov.com/" target="blank" style="color: #B5B4B4; text-decoration: none;">Callme script</a></div>
+</div>
 </div>
 
 <script type="text/javascript">

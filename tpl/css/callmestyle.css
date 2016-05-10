@@ -121,19 +121,21 @@ input#modalformbtn:hover{
     color: black;
 }
 
-.copyright {
-    position: fixed;
+.callme_copyright {
+    position: absolute;
     bottom: 10px;
-    right: 150px;
+    text-align: center;
     color: #B5B4B4;
+	width: 100%;
 }
-.copyright:hover {
+
+.callme_copyright:hover {
 	text-decoration: underline;
 }
 
 
 
-.modal-overlay {
+.modaloverlay {
     background-color: rgba(68, 68, 68, 0.7);
     bottom: 0;
     cursor: default;
