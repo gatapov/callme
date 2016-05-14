@@ -31,13 +31,19 @@ require '../lib/config.php';
  
 <input id="modalformbtn" type= "submit" value= "<?=$btntext?>"> 
 </div>
- <div class="formbottom"><?=$bottomtext?><br><?=$bottomphone?></div>
+
   
 </form>
+ <div class="callme-preloader">
+ </div>
+
  <div class="results">
  </div>
  <div class="callme_copyright-wrapper">
-<div class="callme_copyright">© <a href="http://callme.gatapov.com/" target="blank" style="color: #B5B4B4; text-decoration: none;">Callme script</a></div>
+<div class="callme_copyright">
+ <div class="formbottom"><?=$bottomtext?><br><?=$bottomphone?></div>
+© <a id="callme-copyright" href="http://callme.gatapov.com/" target="blank" style="color: #B5B4B4;">Callme script</a>
+</div>
 </div>
 </div>
 
@@ -64,8 +70,13 @@ function call() {
           type: 'POST',
           url: 'callme/lib/send.php',
           data: msg,
+		  beforeSend: function(){
+            $('.callme-preloader').html('<img id="imgcode" src="callme/tpl/img/callmepreloader.gif">');
+			$('.formheader').css({'display': 'none'});
+        },
           success: function(data) {
             $('.results').html(data);
+			$('.callme-preloader').css({'display': 'none'});
           },
           error:  function(xhr, str){
 	    alert('Возникла ошибка: ' + xhr.responseCode);

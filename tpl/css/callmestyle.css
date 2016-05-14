@@ -68,11 +68,15 @@ input#modalformbtn:hover{
     font-family: calibri;
 }
 .formbottom {
-	padding-top: 20px;
-    text-align: center;
     font-family: calibri;
     font-size: 20px;
+    color: black;
+	padding-bottom: 20px;
 }
+.formbottom :hover{
+	text-decoration: none;
+}
+
 .overlay {
     background-color: rgba(68, 68, 68, 0.7);
     bottom: 0;
@@ -91,7 +95,6 @@ input#modalformbtn:hover{
 		transition: opacity .5s;
 }
 .popup {
-	/*background-color: #fff;*/
 	background: url(../img/fon.png);
 	right:0;
 	opacity: 0;
@@ -129,7 +132,7 @@ input#modalformbtn:hover{
 	width: 100%;
 }
 
-.callme_copyright:hover {
+a#callme-copyright:hover {
 	text-decoration: underline;
 }
 
@@ -199,6 +202,12 @@ p#result {
     padding: 20px 20px 20px 20px;
     width: inherit;
 }
+.callme-preloader {
+    position: fixed;
+    top: 50%;
+    width: inherit;
+	text-align: center;
+}
 .resultsbtn {
     border: none;
     margin-top: 15px;
@@ -219,7 +228,7 @@ p#result {
 
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 600px) {
 .popup {
 	width: 100vw;
 	text-align: center;
@@ -248,5 +257,11 @@ form#modalform {
 	top: 10%;
 	padding: 0px;
     width: inherit;
+}
+.callme-preloader {
+    position: fixed;
+    top: 10%;
+    width: inherit;
+	text-align: center;
 }
 }
